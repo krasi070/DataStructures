@@ -23,7 +23,7 @@
         {
             get 
             { 
-                return this.Items.Count >= MaxItemCount; 
+                return this.Items.Count >= MaxItemCount && this.Children == null; 
             }
         }
 
